@@ -1,0 +1,218 @@
+html, body {
+    background-color: #222328 !important;
+}
+
+/* Scrollbar Style */
+
+body::-webkit-scrollbar-track {
+    background-color: #222328 !important;
+}
+
+body::-webkit-scrollbar-thumb, body::-webkit-scrollbar-track {
+	border-radius: 15px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    -khtml-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    -moz-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    -ms-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #808080;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Main Style */
+
+.main-box {
+    width: 35vw;
+    min-width: 300px;
+    margin-top: 50px;
+}
+
+#thoughts-place {
+    margin-bottom: 50px;
+}
+
+/* Text Style */
+
+.main-box .title-text {
+    color: #999a9e;
+    font-family: 'Jost', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.main-box .text {
+    color: #999a9e;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.main-box .thought .text {
+    color: #d0d0d0;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.main-box .subtitle-text {
+    color: #999a9e;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+    text-shadow: 0px 0px 2px rgba(0,0,0,75);
+}
+
+/* Form Validation Style Text */
+
+form .validation {
+    font-size: 22px;
+    font-family: 'Jost', sans-serif;
+
+    margin-top: 0.5rem;
+
+    text-align: center;
+
+    color: #ffa500;
+
+    text-shadow: 0px 0px 2px rgba(0,0,0,75);
+}
+
+/* PopUp */
+
+.swal2-popup {
+    background-color: #1a1b1f !important;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #999a9e !important;
+    box-shadow: none !important;
+}
+
+/* Divider */
+
+.divider {
+    border: 0;
+    border-top: 1px solid #808080;
+}
+
+/* Line Break */
+
+.line-break svg {
+    display: block;
+
+    width: 75%;
+    max-width: 100%;
+    height: auto !important;
+    margin: 0 auto;
+}
+
+/* Transparent Input */
+
+.transparent-input-cover {
+    border: solid 1px #999a9e;
+    border-radius: 5px;
+
+    width: 100%;
+
+    -webkit-box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+    -khtml-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+    -ms-box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+}
+
+.transparent-input {
+    display: block;
+    outline: none;
+    border: none;
+
+    font-size: 22px;
+    font-family: 'Jost', sans-serif;
+    
+    width: 100%;
+    padding: 10px;
+
+    color: white;
+    background: transparent;
+}
+::-webkit-input-placeholder {color: #808080 } 
+:-moz-placeholder { color: #808080 }
+::-moz-placeholder { color: #808080 }
+:-ms-input-placeholder { color: #808080 }
+
+.btn-transparent {
+    font-size: 1.2rem !important;
+
+    color: #808080 !important;
+    border-color: #999a9e !important;
+    background-color: none !important;
+    
+    transition: all .2s ease-in-out !important;
+}
+
+.btn-transparent:hover, .btn-transparent:focus {
+    color: rgb(200, 200, 200) !important;
+    border-color: rgb(200, 200, 200) !important;
+}
+
+.btn-transparent:focus {
+    box-shadow: 0 0 0 0.1rem rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Style for Small Mobile Device */
+
+@media only screen and (max-width: 380px) {
+    .title-text {
+        font-size: 2.5rem;
+    }
+
+    .subtitle-text {
+        font-size: 1rem;
+    }
+
+    .validation {
+        font-size: 14px;
+        font-family: 'Jost', sans-serif;
+
+        color: #ffa500;
+
+        text-shadow: 0px 0px 2px rgba(0,0,0,75);
+    }
+}
+
+/* Style for Mobile Device */
+
+@media only screen and (min-width: 380px) and (max-width:480px) {
+    .title-text {
+        font-size: 3rem;
+    }
+
+    .subtitle-text {
+        font-size: 1rem;
+    }
+
+    .validation {
+        font-size: 17px;
+        font-family: 'Jost', sans-serif;
+
+        color: #ffa500;
+
+        text-shadow: 0px 0px 2px rgba(0,0,0,75);
+    }
+}
+
+/* No Select Style */
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>SHARE MY THOUGHTS</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Icon -->
+        <link rel="shortcut icon" type="image/png" href="/images/Icon.png">
+        <!-- Main CSS -->
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap" rel="stylesheet">
+        <!-- SweetAlert -->
+        <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css" rel="stylesheet"/>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://j11y.io/demos/plugins/jQuery/autoresize.jquery.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="main-box mx-auto">
+            <h1 class="title-text noselect">SHARE MY THOUGHTS</h1>
+            <h6 class="subtitle-text noselect">SAY WHAT YOU WANT</h6>
+            <form name="PostThought" id="PostThought" class="d-flex flex-column" onsubmit="return post_Text()">
+                <p id="validation" class="validation"></p>
+                <div class="d-flex flex-nowrap transparent-input-cover mb-4">
+                    <div class="col p-0">
+                        <textarea name="TextArea" id="TextArea" class="transparent-input noselect" rows="1" maxlength="500" placeholder="Type Here!"></textarea>
+                    </div>
+                </div>
+                <button class="btn btn-transparent mx-auto" type="submit" value="Submit">Share My Thought</button>
+            </form>
+            <div class="line-break my-4">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="639px" height="27px"  viewBox="0 0 639 27">
+                    <path fill-rule="evenodd" fill="rgb(128, 128, 128)" d="M364.000,14.000 L364.000,12.000 L639.000,12.000 L639.000,14.000 L364.000,14.000 ZM319.000,27.000 L333.000,0.000 L335.000,0.000 L321.000,27.000 L319.000,27.000 ZM304.000,27.000 L318.000,0.000 L320.000,0.000 L306.000,27.000 L304.000,27.000 ZM0.000,12.000 L275.000,12.000 L275.000,14.000 L0.000,14.000 L0.000,12.000 Z"/>
+                </svg>
+            </div>
+            <h3 class="text noselect mb-3">THOUGHTS:</h3>
+            <div id="thoughts-place">
+            </div>
+        </div>
+        <!-- SweetAlert -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.22.2/sweetalert2.min.js"></script>
+        <!-- Optional JavaScript -->
+        <script src="/js/main.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
+
