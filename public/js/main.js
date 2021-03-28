@@ -91,6 +91,8 @@ function newThought(thought) {
         documentThoughts.innerHTML = '';
         
         documentThoughts.setAttribute('hasData', true);
+    } else {
+        documentThoughts.innerHTML = '<hr class="divider">' + documentThoughts.innerHTML;
     }
 
     documentThoughts.innerHTML = createThought(thought) + documentThoughts.innerHTML;
